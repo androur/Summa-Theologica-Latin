@@ -4,7 +4,7 @@ A single .txt file that contains all of the original latin text of Summa Theolog
 #The file is pure text with no all-caps words.
 #It does not include "prooemium-s" for individual parts (Prima, Prima Secundae, Secunda Secundae, Tertia).
 #53527 lines
-#1606281 words
+#1579772 words
 
 #Between articles there is a 2 row gap.
 #Between "Quaestio X"+"Prooemium" and "Articulus 1" there is a 2 row gap.
