@@ -3,6 +3,8 @@ A single .txt file that contains all of the original latin text of Summa Theolog
 
 #The file is pure text with no all-caps words.
 #It does not include "prooemium-s" for individual parts (Prima, Prima Secundae, Secunda Secundae, Tertia).
+#53527 lines
+#1606281 words
 
 #Between articles there is a 2 row gap.
 #Between "Quaestio X"+"Prooemium" and "Articulus 1" there is a 2 row gap.
@@ -33,4 +35,4 @@ The text it self came from Corpus Thomisticum, I'd manually go though pages and 
 Then I used a simple python script to clean the text from hyperlinks and other web artifacts.
 Then another phython script revealed that questions: I 71, I 72, II-II 48, II-II 80, II-II 128, II-II 143
 have 0 articles. So I used aquinas.cc to add the titles "Articulus 1" manually at the correct spots.
-Some of those simple scripts are in the Summing summa.py file.
+Some of those simple scripts are in the clean_summa.py file.
