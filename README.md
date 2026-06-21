@@ -8,7 +8,7 @@ A single .txt file that contains all of the original latin text of Summa Theolog
 
 #Between articles there is a 2 row gap.
 #Between "Quaestio X"+"Prooemium" and "Articulus 1" there is a 2 row gap.
-#Between the last line of an article and the next "Quastio title" there is a 2 row gap.
+#Between the last line of an article and the next "Quaestio title" there is a 2 row gap.
 #Between individual parts of Summa, there are no new titles, same 2 row gap rule applies.
 For example:
   Quaestio 6
@@ -33,7 +33,7 @@ The workflow was mostly manual:
 I used https://www.corpusthomisticum.org/ and aquinas.cc as the sources of text
 The text it self came from Corpus Thomisticum, I'd manually go though pages and use ctrl+a, ctrl+c, ctrl+v into the text editor.
 Then I used a simple python script to clean the text from hyperlinks and other web artifacts.
-Then another phython script revealed that questions: I 71, I 72, II-II 48, II-II 80, II-II 128, II-II 143
+Then another python script revealed that questions: I 71, I 72, II-II 48, II-II 80, II-II 128, II-II 143
 have 0 articles. So I used aquinas.cc to add the titles "Articulus 1" manually at the correct spots.
 Some of those simple scripts are in the clean_summa.py file.
 
