@@ -36,3 +36,5 @@ Then I used a simple python script to clean the text from hyperlinks and other w
 Then another phython script revealed that questions: I 71, I 72, II-II 48, II-II 80, II-II 128, II-II 143
 have 0 articles. So I used aquinas.cc to add the titles "Articulus 1" manually at the correct spots.
 Some of those simple scripts are in the clean_summa.py file.
+
+The file may contain errors. If you find any, we'd be thankful if you reported them to issues tab.
