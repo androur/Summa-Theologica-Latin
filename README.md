@@ -3,30 +3,26 @@ A single .txt file that contains all of the original latin text of Summa Theolog
 
 #The file is pure text with no all-caps words.
 #It does not include "prooemium-s" for individual parts (Prima, Prima Secundae, Secunda Secundae, Tertia).
-#53527 lines
+#53520 lines
 #1579772 words
 
-#Between articles there is a 2 row gap.
-#Between "Quaestio X"+"Prooemium" and "Articulus 1" there is a 2 row gap.
-#Between the last line of an article and the next "Quaestio title" there is a 2 row gap.
-#Between individual parts of Summa, there are no new titles, same 2 row gap rule applies.
-For example:
-  Quaestio 6
-  Prooemium
-  ...
+# ABOUT THE FORMAT
+Text file SummaTheologica.txt contains 5 main types of lines:
+  1. "Quaestio X" - X is the number of the question
+  2. "Prooemium" - this one word line is always under a line type 2
+  3. "Articulus X" - X is the number of the article within a question
+  4. paragraph text - A line of text roughly 70 words but can be way more. Objections, replies and "sed contra" part are all individual paragraphs
+  5. empty line - just ""
+lines type 1, 3 and 4 depend on the actual text by Aquinas while lines type 2 and 5 can be derived from those.
+In the text file SummaTheologica.txt these 5 types of lines follow predictable and useful rules:
+  1. All lines type 4 have a single line type 5 right bellow.
+  2. All lines type 1 have a single line type 2 right bellow.
+  3. All lines types 1 and 3 have a single line type 5 right above.
+Rules 1 and 3 have exceptions:
+  - The text file ends with a line type 4 - line type 5 was removed bellow it.
+  - The very first line of the text file begins with a line type 1 - line type 5 was removed above it.
+When going from one individual part to another (line 5 of the README) a line type 1 just starts counting from 1 again, no special lines type 5 or any other type were added.
 
-
-  Articulus 1
-  ...
-
-
-  Articulus 2
-  ...
-
-
-  Quaestio 7
-  Prooemium
-  ...
 You can also check the file Example.txt, it has a real slice of the text so you can see the format without having to open the final massive file.
 
 The workflow was mostly manual:
