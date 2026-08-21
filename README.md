@@ -15,11 +15,11 @@ Text file SummaTheologica.txt contains 5 main types of lines:
   5. empty line - just ""
 lines type 1, 3 and 4 depend on the actual text by Aquinas while lines type 2 and 5 can be derived from those.
 In the text file SummaTheologica.txt these 5 types of lines follow predictable and useful rules:
-  1. All lines type 4 have a single line type 5 right bellow.
-  2. All lines type 1 have a single line type 2 right bellow.
+  1. All lines type 4 have a single line type 5 right below.
+  2. All lines type 1 have a single line type 2 right below.
   3. All lines types 1 and 3 have a single line type 5 right above.
 Rules 1 and 3 have exceptions:
-  - The text file ends with a line type 4 - line type 5 was removed bellow it.
+  - The text file ends with a line type 4 - line type 5 was removed below it.
   - The very first line of the text file begins with a line type 1 - line type 5 was removed above it.
 When going from one individual part to another (line 5 of the README) a line type 1 just starts counting from 1 again, no special lines type 5 or any other type were added.
 
@@ -27,7 +27,7 @@ You can also check the file Example.txt, it has a real slice of the text so you 
 
 The workflow was mostly manual:
 I used https://www.corpusthomisticum.org/ and aquinas.cc as the sources of text
-The text it self came from Corpus Thomisticum, I'd manually go though pages and use ctrl+a, ctrl+c, ctrl+v into the text editor.
+The text it self came from Corpus Thomisticum, I'd manually go through pages and use ctrl+a, ctrl+c, ctrl+v into the text editor.
 Then I used a simple python script to clean the text from hyperlinks and other web artifacts.
 Then another python script revealed that questions: I 71, I 72, II-II 48, II-II 80, II-II 128, II-II 143
 have 0 articles. So I used aquinas.cc to add the titles "Articulus 1" manually at the correct spots.
