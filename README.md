@@ -2,7 +2,8 @@
 A single .txt file that contains all of the original latin text of Summa Theologica by saint Thomas Aquinas.
 
 #The file is pure text with no all-caps words.
-#It does not include "prooemium-s" for individual parts (Prima, Prima Secundae, Secunda Secundae, Tertia).
+#It only includes texts of the articles and their titles for navigation
+#It does not include "prooemium-s" in between questions or larger parts (for example "We now must consider..." is not included).
 #53520 lines
 #1579772 words
 
